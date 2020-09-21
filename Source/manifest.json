@@ -1,0 +1,16 @@
+{
+	"manifest_version": 2,
+	"name": "AlgoFilter",
+	"version": "1.0",
+	"description": "Replaces the text 'algorithm' with 'the way people programmed the application'.",
+	"icons": { "128": "logo.png" },
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
+
